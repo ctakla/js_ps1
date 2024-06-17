@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>JS 3</title>
+</head>
+<body>
+<h1>JS 3</h1>
+<script>
+num1 = prompt("Enter the first number:");
+num2 = prompt("Enter the second number:");
+
+function sortNumbers(a, b) {
+    if (a > b) {
+        return [b, a];
+    } else {
+        return [a, b];
+    }
+}
+
+sortedNumbers = sortNumbers(num1, num2);
+document.write("Numbers in order: " + sortedNumbers[0] + ", " + sortedNumbers[1]);
+
+</script>
+  </body>
+  </html>
