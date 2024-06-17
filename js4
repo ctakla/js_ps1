@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>JS 4</title>
+</head>
+<body>
+<h1>JS 4</h1>
+<script>
+
+start = parseInt(prompt("Enter a number to start the range:"));
+end = parseInt(prompt("Enter a number to end the range:"));
+
+if (start > end) {
+            let temp = start;
+            start = end;
+            end = temp;
+        }
+
+oddNumbers = [];
+let sum = 0;
+
+for (let i = start; i <= end; i++) {
+            sum += i;
+	if (i % 2 !== 0) {
+                oddNumbers.push(i);
+            }
+        }
+ const oddNumbersElement = document.createElement("p");
+        oddNumbersElement.textContent = `Odd Numbers: ${oddNumbers.join(', ')}`;
+
+        const sumElement = document.createElement("p");
+        sumElement.textContent = `Sum of all numbers: ${sum}`;
+
+document.body.appendChild(oddNumbersElement);
+document.body.appendChild(sumElement);
+
+</script>
+</body>
+</html>
