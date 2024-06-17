@@ -15,3 +15,5 @@ F2 = (C2 * 9/5) + 32 ;
 alert("That is " + F2 + " degrees Fahrenheit");
 
 </script>
+</body>
+</html>
